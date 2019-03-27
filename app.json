@@ -1,0 +1,23 @@
+{
+  "id": "4cf9bd5a-c442-4ce5-93f7-30a0a5bb2d87",
+  "name": "SD Seminar",
+  "publisher": "D.E. Veloper",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "14.0.0.0",
+  "application": "14.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "4.0"
+}
