@@ -15,6 +15,7 @@
   "screenshots": [],
   "platform": "14.0.0.0",
   "application": "14.0.0.0",
+  "features":["TranslationFile"],
   "idRange": {
     "from": 50100,
     "to": 50149

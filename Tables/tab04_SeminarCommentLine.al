@@ -1,4 +1,8 @@
 table 50104 "CSD Seminar Comment Line"
+// CSD1.00 - 2019-04-09 - D.E.Veloper
+// Chapter 5 - Lab 2-1
+// Chapter 7 - Lab 3-2
+
 {
     Caption = 'Seminar Comment Line';
     LookupPageId = "CSD Seminar Comment List";
@@ -23,7 +27,13 @@ table 50104 "CSD Seminar Comment Line"
         {
             Caption = 'No.';
             TableRelation = if ("Table Name" = CONST (Seminar))
-                                "CSD Seminar";
+                                "CSD Seminar"
+            else
+            if ("Table Name" = const ("Seminar Registration Header"))
+                            "Seminar Registration Header"
+            else
+            if ("Table Name" = const ("Posted Seminar Reg. Header"))
+                            "CSD Posted Seminar Reg. Header";
         }
         field(40; "Line No."; Integer)
         {
