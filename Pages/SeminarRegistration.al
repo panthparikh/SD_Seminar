@@ -157,6 +157,24 @@ page 50129 "Seminar Registration"
                     ShortcutKey = F9;
                     RunObject = codeunit "Seminar-Post (Yes/No)";
                 }
+
+                action("&Print")
+                {
+                    Caption = '&Print';
+                    Image = Print;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedCategory = Process;
+
+                    trigger OnAction();
+                    var
+                        SeminarReportSelection: Record "CSD Seminar Report Selections";
+
+                    begin
+                        SeminarReportSelection.PrintReportSelection(SeminarReportSelection.Usage::Registration, Rec);
+
+                    end;
+                }
             }
         }
     }
